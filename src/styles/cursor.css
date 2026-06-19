@@ -1,0 +1,16 @@
+.custom-cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #00e5ff;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px #00e5ff;
+}
+
+.cursor-hover {
+  transform: scale(2);
+  background: #a855f7;
+}

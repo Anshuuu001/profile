@@ -1,0 +1,64 @@
+:root {
+  --gradient-start: #2b0044;
+  --bg: #060312;
+  --card: #0d0a1f;
+  --border: #25163f;
+  --pink: #ff2bd6;
+  --purple: #7b2dff;
+  --white: #ffffff;
+  --text: #b7b3d1;
+  --shadow: 0 0 25px rgba(183, 0, 255, 0.35);
+}
+
+.light {
+  --gradient-start: #e2e8f0;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --border: #cbd5e1;
+  --pink: #db2777;
+  --purple: #7c3aed;
+  --white: #0f172a;
+  --text: #334155;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.cyberpunk {
+  --gradient-start: #1f003a;
+  --bg: #020205;
+  --card: #080710;
+  --border: #1d1b38;
+  --pink: #00f0ff;
+  --purple: #ff007f;
+  --white: #ffffff;
+  --text: #7df9ff;
+  --shadow: 0 0 25px rgba(0, 240, 255, 0.35);
+}
+
+.anime {
+  --gradient-start: #3d0c24;
+  --bg: #120610;
+  --card: #1d0a1b;
+  --border: #3a1032;
+  --pink: #ff2a85;
+  --purple: #ff7300;
+  --white: #ffffff;
+  --text: #ffb5d8;
+  --shadow: 0 0 25px rgba(255, 42, 133, 0.35);
+}
+
+.minimal {
+  --gradient-start: #f3f4f6;
+  --bg: #ffffff;
+  --card: #f9fafb;
+  --border: #e5e7eb;
+  --pink: #111827;
+  --purple: #4b5563;
+  --white: #111827;
+  --text: #374151;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+body {
+  background: radial-gradient(circle at top left, var(--gradient-start) 0%, var(--bg) 45%) !important;
+  color: var(--white) !important;
+}
