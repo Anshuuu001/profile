@@ -12,30 +12,30 @@ function EditingShowcase() {
 
     {
       title: "Anime AMV Edit",
-      video: "/videos/amv.mp4",
+      video: "https://assets.mixkit.co/videos/preview/mixkit-futuristic-subway-station-with-neon-lights-and-a-train-40092-large.mp4",
       category: "AMV",
-      thumbnail: "/images/projects/amv.jpg",
+      thumbnail: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&auto=format&fit=crop&q=80",
     },
 
     {
       title: "Manga Motion Edit",
-      video: "/videos/manga.mp4",
+      video: "https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-neon-lights-in-a-futuristic-city-34341-large.mp4",
       category: "Manga",
-      thumbnail: "/images/projects/manga.jpg",
+      thumbnail: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=800&auto=format&fit=crop&q=80",
     },
 
     {
       title: "Cinematic Reel",
-      video: "/videos/cinematic.mp4",
+      video: "https://assets.mixkit.co/videos/preview/mixkit-cinematic-view-of-a-dj-performing-at-a-nightclub-43037-large.mp4",
       category: "Cinematic",
-      thumbnail: "/images/projects/cinematic.jpg",
+      thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&auto=format&fit=crop&q=80",
     },
 
     {
       title: "Instagram Reel",
-      video: "/videos/reel1.mp4",
+      video: "https://assets.mixkit.co/videos/preview/mixkit-vertical-video-of-a-man-filming-with-his-smartphone-40003-large.mp4",
       category: "Social Media",
-      thumbnail: "/images/projects/reel.jpg",
+      thumbnail: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&auto=format&fit=crop&q=80",
     },
 
   ];

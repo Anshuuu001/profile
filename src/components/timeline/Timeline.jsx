@@ -115,6 +115,7 @@ function Timeline() {
               <TimelineItem
                 key={index}
                 item={item}
+                index={index}
                 left={index % 2 === 0}
               />
 

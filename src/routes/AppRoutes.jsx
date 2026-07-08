@@ -1,37 +1,25 @@
-// src/routes/AppRoutes.jsx
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import MainLayout from "../layouts/MainLayout";
-
 import Home from "../pages/Home";
-import About from "../pages/About";
-import Projects from "../pages/Projects";
-import Skills from "../pages/Skills";
-import Contact from "../pages/Contact";
+import Login from "../pages/Login";
+import Admin from "../pages/Admin";
 import NotFound from "../pages/NotFound";
+import ProtectedRoute from "./ProtectedRoute";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-
-        <Route path="/" element={<MainLayout />}>
-
-          <Route index element={<Home />} />
-
-          <Route path="about" element={<About />} />
-
-          <Route path="projects" element={<Projects />} />
-
-          <Route path="skills" element={<Skills />} />
-
-          <Route path="contact" element={<Contact />} />
-
-        </Route>
-
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <Admin />
+            </ProtectedRoute>
+          }
+        />
         <Route path="*" element={<NotFound />} />
-
       </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,21 @@
-import Particles from "react-tsparticles";
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadFull } from "tsparticles";
 
 function BackgroundEffects() {
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadFull(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  if (!init) {
+    return null;
+  }
 
   return (
 
@@ -9,6 +24,8 @@ function BackgroundEffects() {
       {/* PARTICLES */}
 
       <Particles
+
+        id="tsparticles"
 
         className="absolute inset-0"
 

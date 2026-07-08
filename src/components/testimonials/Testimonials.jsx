@@ -41,7 +41,9 @@ function Testimonials() {
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
-        return [...defaultTestimonials, ...parsed];
+        if (Array.isArray(parsed)) {
+          return [...defaultTestimonials, ...parsed];
+        }
       } catch (e) {
         console.error(e);
       }

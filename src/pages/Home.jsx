@@ -34,7 +34,7 @@ function Section({ children }) {
 
 function Home() {
   return (
-    <div className="bg-[#050816] text-white overflow-hidden">
+    <div className="bg-transparent overflow-hidden">
 
       {/* Global UI Layer */}
       <ScrollProgress />

@@ -26,7 +26,7 @@ function BeforeAfter() {
         </div>
 
         <img
-          src="/images/projects/before.jpg"
+          src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop&q=80"
           alt="Before"
           className="
             w-full
@@ -55,7 +55,7 @@ function BeforeAfter() {
         </div>
 
         <img
-          src="/images/projects/after.jpg"
+          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80"
           alt="After"
           className="
             w-full

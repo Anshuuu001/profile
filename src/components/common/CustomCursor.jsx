@@ -1,10 +1,20 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function CustomCursor() {
   const cursorRef = useRef(null);
   const cursorDotRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        ) || window.matchMedia("(pointer: coarse)").matches
+      );
+    };
+    checkMobile();
+
     const moveCursor = (e) => {
       if (cursorRef.current && cursorDotRef.current) {
         cursorRef.current.style.left = e.clientX + "px";
@@ -38,12 +48,15 @@ function CustomCursor() {
     };
   }, []);
 
+  if (isMobile) return null;
+
   return (
     <>
       {/* OUTER CURSOR */}
       <div
         ref={cursorRef}
         id="cursor"
+        style={{ left: "-100px", top: "-100px" }}
         className="
           fixed
           w-10
@@ -66,6 +79,7 @@ function CustomCursor() {
       <div
         ref={cursorDotRef}
         id="cursor-dot"
+        style={{ left: "-100px", top: "-100px" }}
         className="
           fixed
           w-3
